@@ -38,7 +38,7 @@ public class Student {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Column(nullable = false, updatable = false)
-  private Long studentId;
+  private long studentId;
 
   @NonNull
   @Column(nullable = false, updatable = false, unique = true)
@@ -68,7 +68,7 @@ public class Student {
   @OrderBy("relationshipType ASC")
   private final List<StudentContact> studentContacts = new LinkedList<>();
 
-  public Long getStudentId() {
+  public long getStudentId() {
     return studentId;
   }
 

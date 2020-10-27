@@ -32,7 +32,7 @@ public class StudentContact {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Column(nullable = false, updatable = false)
-  private Long studentContactId;
+  private long studentContactId;
 
   @NonNull
   @ManyToOne(fetch = FetchType.EAGER)
@@ -51,7 +51,7 @@ public class StudentContact {
   @Enumerated(value = EnumType.STRING)
   private Relationship relationshipType;
 
-  public Long getStudentContactId() {
+  public long getStudentContactId() {
     return studentContactId;
   }
 

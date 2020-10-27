@@ -29,7 +29,7 @@ public class Contact {
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Column(nullable = false, updatable = false)
-  private Long contactId;
+  private long contactId;
 
   @NonNull
   @Column(nullable = false)
@@ -54,7 +54,7 @@ public class Contact {
   @OrderBy("studentId ASC")
   private final List<StudentContact> studentContacts = new LinkedList<>();
 
-  public Long getContactId() {
+  public long getContactId() {
     return contactId;
   }
 
