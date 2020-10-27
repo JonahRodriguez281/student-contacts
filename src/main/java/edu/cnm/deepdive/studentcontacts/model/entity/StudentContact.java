@@ -48,7 +48,7 @@ public class StudentContact {
 
   @NonNull
   @Column(nullable = false, updatable = false)
-  @Enumerated(value = EnumType.ORDINAL)
+  @Enumerated(value = EnumType.STRING)
   private Relationship relationshipType;
 
   public Long getStudentContactId() {
